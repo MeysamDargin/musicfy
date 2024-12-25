@@ -1,0 +1,27 @@
+name: musicfy
+description: "A Flutter plugin for retrieving music metadata from the device."
+version: 0.0.1
+homepage: https://github.com/your-repository/musicfy # لینک به مخزن پروژه یا مستندات
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.3.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  plugin:
+    implements: flutter.plugins
+    platforms:
+      android:
+        package: com.example.musicfy
+        pluginClass: MusicfyPlugin
+
